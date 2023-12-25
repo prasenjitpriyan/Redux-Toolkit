@@ -5,12 +5,16 @@ import { getProducts } from "../store/productSlice";
 
 const Product = () => {
   const dispatch = useDispatch();
-  const { data: products } = useSelector((state) => state.products);
+  const { products, status } = useSelector((state) => state.products);
 
   useEffect(() => {
     // Dispatch an action for fetch Products
     dispatch(getProducts());
   }, []);
+
+  if (status === "loading") {
+    return <p>Loading...</p>;
+  }
 
   const addToCart = (product) => {
     //Dispatch an add action
