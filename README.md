@@ -1,4 +1,4 @@
-![Untitled-2023-12-25-1531](https://github.com/prasenjitpriyan/Redux-Toolkit/assets/132381731/bda26fca-53d7-409c-a8a5-1f1ebc59a217)# Old Redux vs Redux Toolkit
+# Old Redux vs Redux Toolkit
 
 ## Old Redux
 
@@ -45,5 +45,7 @@ npm install react-redux
 
 - useDispatch is equivalent to mapDispatchToProps()
 - This hooks returns a reference to the dispatch function from the redux store. You may use it to dispatch actions as needed.
+
+
 ![Untitled-2023-12-25-1531](https://github.com/prasenjitpriyan/Redux-Toolkit/assets/132381731/fa19a0b6-7a5f-4e7f-b0e7-4a6b8f0ee5d7)
 
