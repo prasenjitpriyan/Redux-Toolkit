@@ -76,6 +76,36 @@ It stores the application data
 
 ![Screenshot 2023-12-28 at 6 57 11 PM](https://github.com/prasenjitpriyan/Redux-Toolkit/assets/132381731/6941bc7c-bd45-4b78-8f7e-21b8caff06c9)
 
+## Action (Object) Vs Action Creator (Function)
+
+- Action is simply a JavaScript object that contains information about an event that has occurred in your app.
+- Action creators are functions that create and return actions.
+
+## Action Properties
+
+- It is plain Javascript Object
+- It has a type field as a property which is required.
+- It is an event that occurs in your application.
+- It can accept additional properties(payload). This is optional.
+- A function that returns an action is called an action creator.
+
+## Reducer
+
+A reducer is a function that receives the current state or initial state and an action object, decides how to update the state base on the action, and returns the new state.
+
+## Rules of Reducers
+
+- The new state value should only be calculated based on the state and action arguments.
+- Reducers are not allowed to modify the existing state.
+
+## Rules of Store
+
+When it receives an action that cause a change to the state, the store will notify all the registered listeners that a change to the state has been made. This will alow various parts of the system, like the UI, to update themselves according to the new state.
+
+- It stores the application data
+- It doesn't contain business logic
+- It receives actions and pass to all the registered middleware.
+- The only way to change the state inside it is to dispatch an action.
 
 ## Redux Toolkit
 
