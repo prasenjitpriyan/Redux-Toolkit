@@ -68,6 +68,7 @@ It stores the application data
 
 ## How Redux Works
 
+![Screenshot 2023-12-28 at 6 45 47 PM](https://github.com/prasenjitpriyan/Redux-Toolkit/assets/132381731/e418ac5f-895c-4f67-8b52-d23580f38edb)
 
 
 ## Redux Toolkit
