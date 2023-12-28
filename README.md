@@ -70,6 +70,8 @@ It stores the application data
 
 ![Screenshot 2023-12-28 at 6 45 47 PM](https://github.com/prasenjitpriyan/Redux-Toolkit/assets/132381731/e418ac5f-895c-4f67-8b52-d23580f38edb)
 
+![Screenshot 2023-12-28 at 6 52 59 PM](https://github.com/prasenjitpriyan/Redux-Toolkit/assets/132381731/86af1a92-4210-4f49-a2b9-123cd6d27efd)
+
 
 ## Redux Toolkit
 
