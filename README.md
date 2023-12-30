@@ -98,6 +98,10 @@ A reducer is a function that receives the current state or initial state and an 
 - The new state value should only be calculated based on the state and action arguments.
 - Reducers are not allowed to modify the existing state.
 
+## Combine Reducer
+
+It is a function that combine individual reducers to pass to redux store. It is use in complex application
+
 ## Rules of Store
 
 When it receives an action that cause a change to the state, the store will notify all the registered listeners that a change to the state has been made. This will alow various parts of the system, like the UI, to update themselves according to the new state.
@@ -106,6 +110,43 @@ When it receives an action that cause a change to the state, the store will noti
 - It doesn't contain business logic
 - It receives actions and pass to all the registered middleware.
 - The only way to change the state inside it is to dispatch an action.
+
+## Asynchronous Redux - Fetching data from API
+
+- Data is never received, or is received out of order.
+- It can make it difficult to debug your code.
+- The redux store will not be updated and no changes will be made to your application state.
+- Reducers are immediately return a new data if the correct action is dispatch without waiting for the action payload.
+
+## Store Configuration - Advance Store setup
+
+- Middleware - Redux middleware is a powerful tool that can be used to customize and extend the functionality of Redux.
+- Middleware is basically a function that takes in an action and can decide how to handle it.
+
+## Types of Middlewares
+
+- Third party middlewares -
+
+```bash
+npm i redux-logger
+```
+
+- Custom Middlewares.
+
+## Uses of Middleware
+
+- Handle the action
+- Dispatch a new action (i.e. create a side-effect such as making an API call)
+- Log the action to the console/inside the browser by using redux-dev-extension tool.
+- It is used to enable advanced functionality in a Redux store that would not be possible with just a reducer alone.
+- Middlewares are composed and executed within a Redux store using the applyMiddleware() function.
+
+## Redux Thunk
+
+- Redux Thunk is a middleware that allows you to write asynchronous actions.
+- It is a function (action creator) that return a function instead of an action object.
+- This function receives the dispatch method as an argument, which allows you to dispatch actions inside the function.
+- This is often used when you need to perform an async operation, such as making an AJAX request, before dispatching an action.
 
 ## Redux Toolkit
 
